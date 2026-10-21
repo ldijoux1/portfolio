@@ -1,0 +1,441 @@
+:root {
+    --bg:#0b0c0e;
+    --surface:#16181f;
+    --border:#2a2d37;
+    --text:#ececec;
+    --subtext:#8e92a0;
+    --accent:#c87d55;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: 0 0 8px 0;
+}
+
+header p{
+    color: var(--subtext);
+    margin: 0;
+}
+
+main{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.carte{
+    display: block;
+    padding: 28px 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.carte::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: 75% auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.carte-films::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/films.jpg');
+    background-position: center;
+}
+
+.carte-musiques::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/musiques.jpg');
+    background-position: center;
+}
+
+.carte-introspection::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/introspection.jpg');
+    background-position: center;
+}
+
+.carte-essais::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/essais.jpg');
+    background-position: center 60%;
+    background-size: cover ;
+}
+
+.carte-thewall::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/trial.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-orange::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/orange.jpg');
+    background-size: cover ;
+    background-position: top 80%;
+}
+
+.carte-amelie::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/amelie.jpg');
+    background-size: cover ;
+    background-position: center 70%;
+}
+
+.carte-velvet::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/velvet.jpg');
+    background-size: cover ;
+    background-position: center 50%;
+}
+
+.carte-peaks::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/peaks.jpg');
+    background-size: cover ;
+    background-position: bottom;
+}
+
+.carte-eraserhead::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/eraserhead.jpg');
+    background-size: cover ;
+    background-position: top;
+}
+
+.carte-swan::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/swan.jpg');
+    background-size: cover ;
+    background-position: center 50%;
+}
+
+.carte-sangre::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/sangre.jpg');
+    background-size: cover ;
+    background-position: center 55%;
+}
+
+.carte-interest::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/interest.jpg');
+    background-size: cover ;
+    background-position: center 65%;
+}
+
+.carte-perfect::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/perfectdays.jpg');
+    background-size: cover ;
+    background-position: center 50%;
+}
+
+.carte-translation::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/translation.jpg');
+    background-size: cover ;
+    background-position: center 30%;
+}
+
+.carte-windfall::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/windfall.png');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-tdsm::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/moon.jpeg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-wywh::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/wish.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-deuil::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/deuil.jpg');
+    background-size: cover ;
+    background-position: center 70%;
+}
+
+.carte-desert::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/desert.jpg');
+    background-size: cover ;
+    background-position: center 70%;
+}
+
+.carte-escale::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/escale.jpg');
+    background-size: cover ;
+    background-position: center 80%;
+}
+
+.carte-monde::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/monde.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-douceur::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/douceur.jpg');
+    background-size: cover ;
+    background-position: center 65%;
+}
+
+.carte-fantome::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/fantome.png');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-terrasse::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/terrasse.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-alcool::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/alcool.jpg');
+    background-position: center;
+}
+
+.carte-mensonge::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/mensonge.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-conformisme::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/conformisme.jpg');
+    background-size: cover ;
+    background-position: top;
+}
+
+.carte-chambre::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/chambre.jpg');
+    background-size: cover ;
+    background-position: bottom;
+}
+
+.carte-confinement::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/confinement.jpg');
+    background-size: cover ;
+    background-position: center;
+}
+
+.carte-caverne::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/caverne.jpeg');
+    background-size: cover ;
+    background-position: center 80%;
+}
+
+.carte-voyage::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/ulysse.jpg');
+    background-size: cover ;
+    background-position: center 80%;
+}
+
+.carte-voyage::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/ulysse.jpg');
+    background-size: cover ;
+    background-position: center 80%;
+}
+
+.carte-concert::before{
+    background-image: linear-gradient(rgba(11, 12, 14, 0.8), rgba(11, 12, 14, 0.8)), url('images/concert.jpg');
+    background-size: cover ;
+    background-position: center 50%;
+}
+
+.carte:hover::before{
+    opacity: 1;
+}
+
+.carte-icone{
+    position:absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    color: var(--subtext);
+    transition: color 0.3s ease;
+}
+
+.carte:hover .carte-icone {
+    color: var(--accent);
+}
+
+.carte:hover,
+.carte:focus-visible {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(200, 125, 85, 0.3);
+}
+
+.carte:hover::before,
+.carte:focus-visible::before {
+    opacity: 1;
+}
+
+.carte:hover .carte-icone,
+.carte:focus-visible .carte-icone {
+    color: var(--text);
+}
+
+.carte:hover .carte-sous-titre,
+.carte:focus-visible .carte-sous-titre {
+    color: var(--accent);
+}
+
+.carte-sous-titre {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--subtext);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.carte-titre {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.carte:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(200, 125, 85, 0.3);
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a{
+    color: var(--subtext);
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+footer a:hover {
+    color: var(--text);
+}
+
+.bloc {
+    margin-bottom: 48px;
+}
+
+.bloc-titre{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 4px 0;
+}
+
+.bloc-description{
+    color: var(--subtext);
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+}
+
+.liste{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.retour{
+    display: inline-block;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.retour:hover,
+.retour:focus-visible{
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 14px rgba(200, 125, 85, 0.25);
+}
+
+.fleche {
+    transition: transform 0.3 ease;
+}
+
+.retour:hover.fleche,
+.retour:focus-visible .fleche{
+    transform: translateX(-4px);
+}
+
+.fin-texte{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.conteneur-texte p{
+    text-indent: 30px;
+    margin-bottom: 0px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.conteneur-texte strong{
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.titre-text {
+    font-weight: normal;
+    color: var(--text);
+}
+
+.titre-text::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--accent);
+    margin: 16px auto 0;
+}
+
+.nav-haut {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.video-lien {
+    text-align: center;
+    margin-bottom: 32px ;
+}
