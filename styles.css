@@ -439,3 +439,33 @@ footer a:hover {
     text-align: center;
     margin-bottom: 32px ;
 }
+
+.liste-contact {
+    max-width: 480px;
+    gap: 0;
+}
+
+.liste-contact a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.liste-contact a span:first-child {
+    font-size: 0.8rem;
+    color: var(--subtext);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.liste-contact a:hover,
+.liste-contact a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+}
