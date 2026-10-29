@@ -1,0 +1,7 @@
+faire les fonds de chaque pages, cinéma avec le film en accord
+
+remplir le a propos et le contact
+
+hypertexte sur l'exercice des mots qui mene a la définition de chaque mot
+
+rajouter un logo pour que l'on puisse cliquer dessus et revenir à l'accueil

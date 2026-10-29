@@ -399,9 +399,16 @@ footer a:hover {
     transform: translateX(-4px);
 }
 
-.fin-texte{
-    text-align: center;
+.fin-texte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     margin-top: 48px;
+}
+
+.fin-texte .retour {
+    margin-bottom: 0;
 }
 
 .conteneur-texte p{
@@ -468,4 +475,15 @@ footer a:hover {
 .liste-contact a:focus-visible {
     color: var(--accent);
     border-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .carte {
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    .conteneur-texte p {
+        text-align: left;
+    }
 }
